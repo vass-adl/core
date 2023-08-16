@@ -1,9 +1,8 @@
 export default class User {
-  
   private name: string;
   private email: string;
-  
-  constructor(name: string, email string) {
+
+  constructor(name: string, email: string) {
     this.name = name;
     this.email = email;
   }
@@ -12,7 +11,7 @@ export default class User {
     return this.name;
   }
 
-  setName(name: string){
+  setName(name: string) {
     this.name = name;
   }
 
@@ -23,5 +22,4 @@ export default class User {
   setEmail(email: string) {
     this.email = email;
   }
-  
 }
