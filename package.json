@@ -23,8 +23,8 @@
     "url": "git+https://github.com/vass-adl/core.git"
   },
   "keywords": [
-    "Hello",
-    "Greeter"
+    "core",
+    "automation"
   ],
   "author": "Manuel Florez",
   "license": "MIT",

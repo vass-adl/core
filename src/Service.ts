@@ -1,8 +1,10 @@
+import { ServicePriority } from './ServicePriority';
+
 export default class Service {
   private name: string;
-  private priority: string;
+  private priority: ServicePriority;
 
-  constructor(name: string, priority: string) {
+  constructor(name: string, priority: ServicePriority) {
     this.name = name;
     this.priority = priority;
   }
@@ -15,11 +17,11 @@ export default class Service {
     this.name = name;
   }
 
-  getPriority(): string {
+  getPriority(): ServicePriority {
     return this.priority;
   }
 
-  setPriority(priority: string) {
+  setPriority(priority: ServicePriority) {
     this.priority = priority;
   }
 }
