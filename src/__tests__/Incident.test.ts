@@ -2,7 +2,6 @@ import Incident from '../Incident';
 import AnalystVASS from '../analyst/AnalystVASS';
 
 describe('My Incidents', () => {
-
   const analystVASS = new AnalystVASS(
     'Manuel',
     'devops.manuel@gmail.com',
@@ -45,8 +44,18 @@ describe('My Incidents', () => {
       'VASS',
       'DATA'
     );
-    
+
     incident.setAnalystVASS(analystVASS2);
     expect(incident.getAnalystVASS()).toBe(analystVASS2);
-  })
+  });
+
+  test('defines setUrlPosmorten', () => {
+    expect(typeof incident.setUrlPosmorten).toBe('function');
+  });
+
+  test('defines getUrlPostmorten', () => {
+    expect(incident.getUrlPosmorten()).toBe('');
+    incident.setUrlPosmorten('URL_POSMORTEN');
+    expect(incident.getUrlPosmorten()).toBe('URL_POSMORTEN');
+  });
 });

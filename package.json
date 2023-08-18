@@ -7,7 +7,11 @@
   "files": [
     "lib/**/*"
   ],
+  "typeCoverage": {
+    "atLeast": 90
+  },
   "scripts": {
+    "coverage": "npm test -- --coverage",
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
